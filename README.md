@@ -8,6 +8,7 @@
 <p>J'ai également renommé et ajouté certaines classes, bien que j'utilise habituellement une autre convention d'écriture (BEM, avec des classes en lowerCamelCase pour les blocks et une syntaxe pour les élements et les modifiers) j'ai essayé ici de suivre le style d'écriture fourni initialement.</p>
 <br>
 <strong>CSS et intégration</strong>
+<br>
 <p>J'ai décidé d'appeler les éléments directement par leur classe ou bien par leur balise précédée de la classe de leur parent. J'ai utilisé des pseudo-éléments pour cibler des cas uniques, pour ajouter une décoration ou bien une transition. J'ai décidé de ne pas donner de classe aux éléments parents que je savais uniques dans le document (ex: <code>header</code>, <code>nav</code>).</p>
 <br>
 <p>J'ai décidé d'utiliser des SVG pour les icônes de la partie "user settings" car, contrairement à ceux du "wrapper", ils sont amenés à être modifiés à l'interraction de l'utilisateur et le format SVG le permet. J'ai pris la liberté d'ajouter une balise SVG au document pour utiliser le système de <code>symbol</code> qui permet d'appeler facilement un SVG par son id dans le HTML et de le modifier dans la CSS. Étant donné qu'il s'agit d'un format scalable, les icônes étaient par conséquent de meilleure qualité et plus facile à intégrer.</p>
