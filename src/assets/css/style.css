@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none; 
+    color: #fff; 
+}
+
+ul {
+    list-style: none; 
+}
+
+button {
+    background: transparent; 
+    border: none; 
+    outline: none; 
+}
+
+input {
+    border: none; 
+    outline: none; 
+}
+
+@font-face {
+    font-family: "FuturaStd Book";
+    src: url("../fonts/futorastd-book.woff2") format("woff2"),
+    url("../fonts/futorastd-book.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "FuturaStd Book";
+    src: url("../fonts/futurastd-book-bold.woff2") format("woff2"),
+    url("../fonts/futurastd-book-bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    width: 100%;
+    text-align: center;
+    font-family: "FuturaStd Book";
+}
+
+/***MAIN***/
+
+main {
+    width: 100%;
+}
+
+.carousel {
+    height: 600px;
+    width: 100%;
+    background: linear-gradient(to right, #fff 0%,#fff 50%,#f5f3f4 49%,#f5f3f4 100%);
+    position: relative;
+}
+
+.overflow {
+    width: 993px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #f5f3f4;
+}
+
+/***CARROUSEL***/
+
+.owl-carousel {
+    max-width: 993px;
+    margin: 0 auto;
+}
+
+main .overflow .big-visual {
+    cursor: move;
+    width: 993px;
+    height: 515px;
+    margin-top: 2px;
+    margin-left: 1%;
+    background: #58b89d no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.big-visual .product-card {
+    height: 125px;
+    width: 42%;
+    display: flex;
+    position: absolute;
+}
+
+.product-card.first-watch {
+    margin-top: -450px;
+    margin-left: -30px;
+    box-shadow: -15px 0px 20px -10px #adadad;
+}
+
+.product-card.second-watch {
+    margin-top: -400px;
+    margin-right: -75px;
+    box-shadow: 15px 0px 20px -10px #adadad;
+}
+
+.big-visual .product-card .product-infos {
+    height: 100%;
+    background: #fff;
+    width: 75%;
+}
+
+.product-infos .product-name {
+    text-transform: uppercase;
+    color: #72c5c4;
+    font-size: 26px;
+    margin: 14px 30px 9px 45px;
+}
+
+.product-infos .product-description {
+    color: #9a9a9a;
+    font-size: 14px;
+    margin: 0 30px 0 45px;
+}
+
+.big-visual .product-card .product-price {
+    height: 100%;
+    background: #72c5c4;
+    flex: 1;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    line-height: 125px;
+    position: relative;
+}
+
+.product-price::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 32px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid white;
+}
+
+.product-price p {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+.product-price span {
+    font-size: 35px;
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+    margin: 45px 0 10px 0;
+}
+
+footer p {
+    display: inline;
+}
+
+footer img {
+    height: 20px;
+    vertical-align: middle;
+}
+
+
+
+

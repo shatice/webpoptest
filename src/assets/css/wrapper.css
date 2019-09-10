@@ -1,0 +1,133 @@
+.wrapper {
+  background: linear-gradient(to right, #f5f3f4 0%,#f5f3f4 50%,#fff 49%,#fff 100%);
+  height: 50px;
+  width: 100%;
+  margin-top: 35px;
+  height: 125px;
+}
+
+.wrapper-rassurance {
+  width: 993px;
+  height: 125px;
+  background-color: #f5f3f4;
+  margin: 0 auto;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center; 
+  padding: 0; 
+}
+
+.wrapper-rassurance-item {
+  height: 100%; 
+  width: 200px; 
+  border-left: solid 2px white; 
+  color: #a3a2a2; 
+  font-size: 12px; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-around; 
+  padding: 10px; 
+}
+
+.wrapper-rassurance-item:first-child, 
+.wrapper-rassurance-item:nth-child(2), 
+.wrapper-rassurance-item:nth-child(3) {
+  border: none; 
+}
+
+
+.wrapper-rassurance-item:first-child {
+  justify-content: flex-start; 
+  width: 50px; 
+}
+
+.wrapper-rassurance-item:nth-child(2) {
+  background: #6f6f6f; 
+  color: white; 
+  justify-content: space-between; 
+  width: 300px; 
+  line-height: 0.2; 
+  text-align: left; 
+  position: relative;
+}
+
+.wrapper-rassurance-item:nth-child(2)::before, 
+.wrapper-rassurance-item:nth-child(2)::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-left: 4px solid;
+  border-bottom: 4px solid transparent;
+  position: absolute;
+  top: 20px; 
+}
+
+.wrapper-rassurance-item:nth-child(2)::before {
+  left: 0;
+  border-left-color: #f5f3f4; 
+}
+
+.wrapper-rassurance-item:nth-child(2)::after {
+  right: -4px;
+  border-left-color: #6f6f6f; 
+}
+
+.wrapper-rassurance-item:nth-child(2) div {
+  text-align: left; 
+  width: 100%; 
+  padding: 0 10px; 
+}
+
+.wrapper-rassurance-item:nth-child(2) div:first-child p:first-child {
+  text-transform: uppercase; 
+}
+
+.wrapper-rassurance-item-logo {
+  background:url("../img/spritesheet.png") 0 0 no-repeat;
+  width: 25px; 
+  height: 25px;
+  margin: 0 auto; 
+}
+
+.wrapper-rassurance-item:nth-child(3) .wrapper-rassurance-item-logo {
+  width: 38px;
+  height: 38px;
+  background-position: -24px 0;
+}
+
+.wrapper-rassurance-item:nth-child(4) .wrapper-rassurance-item-logo {
+  width: 26px;
+  height: 40px;
+  background-position: -62px 0;
+}
+
+.wrapper-rassurance-item:nth-child(5) .wrapper-rassurance-item-logo {
+  width: 37px;
+  height: 37px;
+  background-position: 0 -40px;
+}
+
+.wrapper-rassurance-item:nth-child(6) .wrapper-rassurance-item-logo {
+  width: 44px;
+  height: 29px;
+  background-position: -37px -40px;
+}
+
+.wrapper-rassurance-item:nth-child(7) .wrapper-rassurance-item-logo {
+  width: 36px;
+  height: 42px;
+  background-position: -88px 0;
+}
+
+.wrapper-rassurance-item:nth-child(8) .wrapper-rassurance-item-logo {
+  width: 59px;
+  height: 24px;
+  background-position: -37px -69px;
+}
+
+.wrapper-rassurance-item:nth-child(9) .wrapper-rassurance-item-logo {
+  width: 35px;
+  height: 27px;
+  background-position: -81px -42px;
+}

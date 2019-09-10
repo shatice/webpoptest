@@ -1,0 +1,242 @@
+header {
+  height: 67px;
+  background: linear-gradient(to right, #2e2e31 0%,#2e2e31 26%,#37373a 25%,#37373a 100%);
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 1300px) {
+  header {
+      background: linear-gradient(to right, #2e2e31 0%,#2e2e31 20%,#37373a 19%,#37373a 100%);
+  }
+}
+
+.header-wrapper {
+  position: relative; 
+  display: flex;
+  justify-content: space-between;
+  width: 993px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.logo-container, 
+.navigation, 
+.user-settings {
+  height: 100%; 
+}
+
+header ul li:hover {
+  background-color: #58b89d;
+}
+
+/* LOGO CONTAINER */
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 192px;
+  background: #2e2e31;
+}
+
+/* NAV */
+
+.navigation {
+  width: 50%; 
+}
+
+.nav-list {
+  display: flex; 
+  justify-content: space-around; 
+  align-items: center; 
+  width: 100%; 
+  height: 100%;
+  margin: 0; 
+  padding: 0; 
+}
+
+.nav-item {
+  position: relative;
+  display: flex; 
+  align-items: center; 
+  height: 100%;
+  margin: 0; 
+  padding: 0 10px; 
+  text-transform: uppercase;
+  transition: all 0.2s; 
+  cursor: pointer;
+}
+
+.nav-item:last-of-type {
+  font-weight: bold;
+}
+
+.nav-item::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px; 
+  transform: translateX(-50%) rotate(90deg);
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-left: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  z-index: 20;
+}
+
+.nav-item:hover:before {
+  border-left-color: #58b89d;
+}
+
+/* USER SETTINGS */
+
+.user-settings {
+  display: flex; 
+  justify-content: flex-end; 
+  width: 22%; 
+}
+
+.user-cart, 
+.user-log {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  padding-top: 10px;
+}
+
+.user-cart::before, 
+.user-log::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0; 
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-top: 4px solid #37373A;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+
+.user-cart {
+  background-color: #4e4d4d;
+}
+
+.cart-button {
+  width: 15px;
+  height: 11px;
+  border: none; 
+  background:url("../img/spritesheet.png") 0 0 no-repeat;
+  background-position: -116px -42px;
+  cursor: pointer;
+}
+
+.user-log {
+  background-color: #cacaca;
+  padding: 3px; 
+}
+
+.log-button {
+  width: 30px; 
+  height: 30px;
+}
+
+.log-icon {
+  cursor: pointer;
+  width: 100%; 
+  height: 100%;
+  z-index: 10;
+  fill: white; 
+  transition: all 0.5s; 
+}
+
+.log-form {
+  width: 90%; 
+  height: 70%;
+  position: relative;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-between; 
+  display: none; 
+}
+
+.log-form button {
+  position: absolute; 
+  bottom: 0; 
+  right: 0; 
+  height: 50%;
+  padding: 10px; 
+  background: #37373A; 
+  color: #f2f2f2; 
+}
+
+.log-form button::before {
+  content: "";
+  position: absolute;
+  left: -4px;
+  top: 40%;
+  margin: 0; 
+  border-top: 6px solid white;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  transform: rotate(-90deg); 
+}
+
+.log-form input {
+  padding: 5px; 
+  width: 100%; 
+  height: 49%;
+}
+
+.log-links {
+  font-size: 0.7rem; 
+  width: 90%; 
+  height: 20%; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  font-family: Arial, Helvetica, sans-serif; 
+  padding: 15px 0; 
+  display: none; 
+}
+
+.log-links a:first-child {
+  text-transform: uppercase; 
+  font-weight: bold; 
+}
+
+/* Login */
+
+.user-log.is-clicked {
+  width: 300px; 
+  height: 150%;
+  z-index: 20;
+  background-color: #a3a2a2; 
+  padding: 0 10px;
+  position: absolute;
+  top: 0; 
+  right: 0;
+}
+
+.user-log.is-clicked::after {
+  transform: rotate(90deg); 
+  right: -2px; 
+  top: 20px; 
+}
+
+.user-log.is-clicked .log-button{
+  position: absolute; 
+  top: 5px; 
+  right: 5px; 
+}
+
+.user-log.is-clicked .log-form, 
+.user-log.is-clicked .log-links {
+  display: flex; 
+}
+
+.user-log.is-clicked .log-icon {
+  fill: red; 
+}
