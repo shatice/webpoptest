@@ -4,46 +4,53 @@
     <meta charset="utf-8">
 		<title>Webpopulation Test</title>
 		<meta name="description" content="Un test pour Webpopulation par Sarah Güngör"/>
+		<link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/spritesheet.css">
 		<link rel="stylesheet" href="assets/css/rollover-menu.css">
 		<link rel="stylesheet" href="assets/css/header.css">
 		<link rel="stylesheet" href="assets/css/wrapper.css">
+		<link rel="stylesheet" href="assets/css/usersettings.css">
 	</head>
-	
-	<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
-		<symbol id="log-icon" x="0px" y="0px" viewBox="0 0 203.5 226.5" enable-background="new 0 0 203.5 226.5">
+
+	<svg x="0px" y="0px" aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+		<symbol id="user-log-icon" viewBox="0 0 203.5 226.5" enable-background="new 0 0 203.5 226.5">
 			<path d="M127.303,36.575v32.969c21.435,9.76,36.381,31.367,36.381,56.414c0,34.167-27.798,61.965-61.965,61.965
 			s-61.965-27.797-61.965-61.965c0-25.046,14.946-46.654,36.38-56.414V36.575c-38.859,11.139-67.38,46.992-67.38,89.383
 			c0,51.261,41.704,92.965,92.965,92.965c51.261,0,92.965-41.704,92.965-92.965C194.684,83.567,166.163,47.714,127.303,36.575z"/>
 			<rect x="87.634" y="8.352" width="28.169" height="85.916"/>
 		</symbol>
+		<symbol id="user-cart-icon" viewBox="0 0 100 100" enable-background="new 0 0 100 100">
+				<path d="M91.65,23.16H9l9.87,37.43h48.08L77.7,27.32h13.95V23.16z"/>
+				<circle cx="28.54" cy="70.59" r="7.02"/>
+				<circle cx="57.91" cy="70.59" r="7.01"/>
+		</symbol>
 	</svg>
 
 	<body>
 		<header>
-			<section class="header-wrapper">
-				<section class="logo-container">
+			<div class="header-wrapper">
+				<div class="logo-container">
 					<a href="#">
 						<img src="assets/img/logo.svg" alt="logo"/>
 					</a>
-				</section>
-				<nav class="navigation">
+				</div>
+				<nav>
 					<ul class="nav-list">
 						<li class="nav-item">
 							<a href="#" class="main-menu-link">Marques</a>
 						</li>
 						<li class="nav-item">
 							<a href="#" class="main-menu-link">Montres</a>
-							<section class="sub-menu">
+							<div class="sub-menu">
 								<div class="sub-menu-wrapper">
 									<div class="visu">
 										<a href="">
 											<img src="assets/img/visu_menu1.jpg" alt="Casio" />
 										</a>
 									</div>
-									<section class="brand-list">
+									<div class="brand-list">
 										<section>
 											<h3>Top marques</h3>
 											<ul>
@@ -77,14 +84,14 @@
 												<li><a href="">Particulier</a></li>
 											</ul>
 										</section>
-									</section>
+									</div>
 									<div class="visu column">
 										<a href=""><img src="assets/img/visu_menu2.jpg" alt="Opex" /></a>
 										<a href=""><img src="assets/img/visu_menu3.jpg" alt="Starck" /></a>
 										<a href="">Voir toutes les montres homme</a>
 									</div>
 								</div>
-							</section>
+							</div>
 						</li>
 						<li class="nav-item">
 							<a href="#" class="main-menu-link">Luxe</a>
@@ -97,30 +104,31 @@
 						</li>
 					</ul>
 				</nav>
-				<section class="user-settings">
+				<div class="user-settings">
 					<div class="user-cart">
-						<button class="cart-button"></button>
+						<button class="user-cart-button">
+							<svg class="user-cart-icon" aria-hidden="true"><use xlink:href="#user-cart-icon"></use></svg>
+						</button>
 					</div>
 					<div class="user-log">
-						<button class="log-button">
-							<svg class="log-icon" aria-hidden="true"><use xlink:href="#log-icon"></use></svg>
+						<button class="user-log-button">
+							<svg class="user-log-icon" aria-hidden="true"><use xlink:href="#user-log-icon"></use></svg>
 						</button>
-						<form class="log-form" action="">
+						<form class="user-log-form">
 							<input name="email" type="email" placeholder="E-MAIL">
-							<input type="" placeholder="MOT DE PASSE">
+							<input type="password" placeholder="MOT DE PASSE">
 							<button>OK</button>
 						</form>
-						<div class="log-links">
+						<div class="user-log-links">
 							<a href="">Je m'inscris !</a>
 							<a href="">Mot de passe oublié ?</a>
 						</div>
 					</div>
-					</button>
-				</section>
-			</section>
+				</div>
+			</div>
 		</header>
 		<main>
-			<section class="carousel">
+			<div class="carousel">
 				<div class="overflow">
 					<div class="owl-carousel">
 						<div class="big-visual">
@@ -131,8 +139,8 @@
 						</div>
 					</div>
 				</div>
-			</section>
-			<section class="wrapper">
+			</div>
+			<div class="wrapper">
 				<ul class="wrapper-rassurance">
 					<li class="wrapper-rassurance-item">
 						<div class="wrapper-rassurance-item-logo"></div>
@@ -178,7 +186,7 @@
 						<p>Retours gratuits et prépayés</p>
 					</li>
 				</ul>
-			</section>
+			</div>
 		</main>
 		<footer>
 			<p>2018 La Mode Les Marques - Tous droits réservés&nbsp;&nbsp;&nbsp;Powered by</p>

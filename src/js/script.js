@@ -10,6 +10,6 @@ $(document).ready(function () {
     });
 });
 
-$('.log-icon').click(function() {
+$('.user-log-icon').click(function() {
     $('.user-log').toggleClass('is-clicked'); 
 });
